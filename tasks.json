@@ -1,0 +1,32 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "description": "cortar pasto",
+            "status": "activa",
+            "fechaVencimiento": "31/07/2025",
+            "estaVencida": false
+        },
+        {
+            "id": 2,
+            "description": "pasear perro",
+            "status": "activa",
+            "fechaVencimiento": "31/07/2025",
+            "estaVencida": false
+        },
+        {
+            "id": 3,
+            "description": "hacer asado",
+            "status": "activa",
+            "fechaVencimiento": "31/05/2025",
+            "estaVencida": true
+        },
+        {
+            "id": 4,
+            "description": "lavar auto",
+            "status": "inactiva",
+            "fechaVencimiento": "31/07/2025",
+            "estaVencida": false
+        }
+    ]
+}
