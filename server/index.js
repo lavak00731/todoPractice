@@ -3,7 +3,8 @@ const fs = require('fs');
 const server = express();
 //const routerAuth = require("./routes/auth.js");
 const { getTask, getTaskIndex, createNewId, getDb } = require('./utils/utils');
-
+const cors = require('cors');
+server.use(cors());
 // peticion -> middleware -> servidor
 
 //get all tasks
@@ -19,7 +20,7 @@ server.use(express.json()); // middleware
 // });
 
 server.get('/api/tasks', (req, res)=>{
-    res.status(200).json(db);
+    res.status(200).json(getDb().tasks);
 });
 
 //get specific task
